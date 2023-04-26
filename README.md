@@ -26,6 +26,6 @@ $ python train_pre.py
 ```
 # set config.py
 $ export CUDA_VISIBLE_DEVICES=0,1
-$ python train_pre.py
+$ python train.py
 ```
 ## Inference
