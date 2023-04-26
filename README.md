@@ -1,9 +1,3 @@
-## Requirements
-* Use **python >= 3.8.5**. Conda recommended : [https://docs.anaconda.com/anaconda/install/linux/](https://docs.anaconda.com/anaconda/install/linux/)
-
-* Use **pytorch 1.7.0 CUDA 10.2 or higher**
-
-* Other requirements from 'requirements.txt'
 
 **To setup environment**
 ```
