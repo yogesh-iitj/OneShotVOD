@@ -28,3 +28,4 @@ $ python train_pre.py
 $ export CUDA_VISIBLE_DEVICES=0,1
 $ python train_pre.py
 ```
+## Inference
