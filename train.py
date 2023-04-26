@@ -2,7 +2,7 @@ import config
 import dataset
 import engine
 import utils.utils as utils
-from model import QGDETR
+from model import QGDETRP
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 import sys
@@ -57,9 +57,9 @@ def run():
     # device = torch.device('cuda:2')
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    model = QGDETR(config.num_classes)
+    model = QGDETRP(config.num_classes)
     model = nn.DataParallel(model)
-    # model.load_state_dict(torch.load('/data1/yogesh/one-shot-det-vid/qdetr/checkpoint/QGdetr_new_data_best_100f_data.pth'))
+    model.load_state_dict(torch.load('/data1/yogesh/one-shot-det-vid/qdetr/checkpoint/QGdetr_new_data_best_50_pre.pth'))
 
     matcher = HungarianMatcher()
     weight_dict = weight_dict = {'loss_ce': 1, 'loss_bbox': 1 , 'loss_giou': 1}
