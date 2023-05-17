@@ -2,7 +2,7 @@
 **To setup environment**
 ```
   # create new env fsrr
-  $ conda create -n qdetr
+  $ conda create -n qdetr python=3.10.4
 
   # activate qdetr
   $ conda activate qdetr
